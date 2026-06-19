@@ -47,6 +47,9 @@ albedo_texture_msdf = true
 normal_enabled = true
 clearcoat_enabled = true
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_m5glw"]
+size = Vector3(3.9, 4, 0.6)
+
 [node name="bunker_walls" type="Node3D" unique_id=659545338]
 
 [node name="wall2" type="Node3D" parent="." unique_id=2026975397]
@@ -54,3 +57,7 @@ clearcoat_enabled = true
 [node name="wall" type="MeshInstance3D" parent="wall2" unique_id=1498362483]
 mesh = SubResource("ArrayMesh_btp5r")
 surface_material_override/0 = SubResource("ORMMaterial3D_m5glw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=89027637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.049999952, 2, 0)
+shape = SubResource("BoxShape3D_m5glw")
