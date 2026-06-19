@@ -4,10 +4,20 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_puy5t"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_qchpj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jugk4"]
+albedo_color = Color(0.7647059, 0.7411765, 0.08627451, 1)
+metallic = 0.55
+metallic_specular = 0.26
+ao_enabled = true
+ao_light_affect = 0.07
+ao_on_uv2 = true
+
 [node name="main" type="Node3D" unique_id=165108992]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=863872224]
-transform = Transform3D(1, 0, 0, 0, 0.55404556, 0.83248633, 0, -0.83248633, 0.55404556, 0, 0, 13)
+transform = Transform3D(0.71303266, 0.42571217, -0.55709374, 0.16689904, 0.668667, 0.7245892, 0.6809765, -0.6096342, 0.40573055, 0, 0, 13)
 light_color = Color(0.8706298, 0.87166584, 0.47803068, 1)
 light_energy = 0.842
 light_indirect_energy = 0.842
@@ -29,155 +39,170 @@ use_collision = true
 transform = Transform3D(3.860123, 0, 0, 0, 0.006984276, 0, 0, 0, 2.072453, -0.37422097, 0.0013510133, 12.999301)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=393910262]
-transform = Transform3D(17.201555, 0, 0, 0, 0.009999993, 0, 0, 0, 9.972721, -10.928583, 0, 0.3232231)
+[node name="CSGhut_mesh_ground3D2" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=393910262]
+transform = Transform3D(17.201555, 0, 0, 0, 0.009999993, 0, 0, 0, 12.013661, -10.928583, 0, 0.3232231)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="w" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1489897833]
-transform = Transform3D(0.9307162, 0, 0, 0, 0.069842786, 0, 0, 0, 0.6562629, 0.4216721, 0.013510138, 12.999779)
+[node name="CSGFloorLvl2_3D10" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=113745998]
+transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 111.973915, -63.127716, 44.7, 253.40002)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=339584877]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 0, 55.000008)
+[node name="CSGFloorLvl2_3D9" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGFloorLvl2_3D10" unique_id=776240679]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.8881998, 0, 0, -0.88609874)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D8" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1334533456]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 44.82317, 55.000008)
+[node name="CSGFloorLvl2_3D8" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGFloorLvl2_3D10" unique_id=1334533456]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.8881998, 0, 1231.7188, -1.7718413)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D5" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=425964321]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 0, 154.18007)
+[node name="CSGfloorLvl1_Mesh3D" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1764266017]
+transform = Transform3D(91.0848, 0, 0, 0, 0.099999964, 0, 0, 0, 12.126574, 43.193306, 0, 0.21728154)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D9" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=776240679]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 44.7, 154.18007)
+[node name="CSGFloorLvl1_3D4" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGfloorLvl1_Mesh3D" unique_id=339584877]
+transform = Transform3D(3.2485495, 0, 0, 0, 0.000999999, 0, 0, 0, 8.2014265, -1.1672751, 0, 4.5175767)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D6" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=872396854]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 0, 253.40002)
+[node name="CSGFloorLvl1_3D5" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGfloorLvl1_Mesh3D" unique_id=425964321]
+transform = Transform3D(3.2485495, 0, 0, 0, 0.000999999, 0, 0, 0, 8.2014265, -1.1672751, 0, 12.696313)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D10" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=113745998]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 44.7, 253.40002)
+[node name="CSGFloorLvl1_3D6" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGfloorLvl1_Mesh3D" unique_id=872396854]
+transform = Transform3D(3.2485495, 0, 0, 0, 0.000999999, 0, 0, 0, 8.2014265, -1.1672751, 0, 20.87834)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D11" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=975553674]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 101.3, 253.40002)
+[node name="CSGfloorLvl1_3D7" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGfloorLvl1_Mesh3D" unique_id=1360436045]
+transform = Transform3D(3.2485495, 0, 0, 0, 0.000999999, 0, 0, 0, 8.2014265, -1.1672751, 0, 29.057076)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D7" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1360436045]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 0, 352.58008)
-mesh = SubResource("BoxMesh_puy5t")
+[node name="CSGHut_walls_ceilings3D" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=874219185]
+transform = Transform3D(0.5792304, 0, 0, 0, 3.217755, 0, 0, 0, 9.298601, -37, 1.6453859, -0.09335342)
+size = Vector3(1, 1.019043, 1.2127419)
 
-[node name="CSGMesh3D12" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1642146426]
-transform = Transform3D(295.8935, 0, 0, 0, 9.999987e-05, 0, 0, 0, 99.45521, -63.127716, 101.2, 352.58008)
-mesh = SubResource("BoxMesh_puy5t")
+[node name="CSGwall3D5" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=1626503087]
+transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1.1999999, 31.03579, 0.009521484, 0.06152549)
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=162904086]
-transform = Transform3D(17.201555, 0, 0, 0, 0.009999993, 0, 0, 0, 9.972721, -28.13648, 0, 0.3753543)
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D/CSGwall3D5" unique_id=406277196]
+transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 0.15999992, 0, -0.14999998, 0)
+operation = 2
+height = 0.70000005
+
+[node name="CSGwall3D2" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=1746835601]
+transform = Transform3D(0.47233063, 0, 0, 0, 0.9999999, 0, 0, 0, 0.99999994, 17.224361, 0.009521484, 0.2635335)
+size = Vector3(1, 1, 0.7079102)
+
+[node name="CSGceiling3D13" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=944724113]
+transform = Transform3D(1.4632367e-07, 34.44927, 6.0968034e-07, 0.025023928, 2.5934054e-07, -1.5058415e-06, -3.787118e-10, 2.2198392e-09, -11.921211, 35.001873, 0.51106024, 0.03444635)
+size = Vector3(1, 2.0500183, 0.10854034)
+
+[node name="CSGfloor_hut3D3" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=162904086]
+transform = Transform3D(29.697258, 0, 0, 0, 0.0031077543, 0, 0, 0, 1.2857671, 15.302235, -0.51134586, 0.05040626)
 use_collision = true
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1764266017]
-transform = Transform3D(91.0848, 0, 0, 0, 0.099999964, 0, 0, 0, 10.105477, 43.193306, 0, 0.21728154)
+[node name="pillar" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=1489897833]
+transform = Transform3D(1.6068151, 0, 0, 0, 1.023191, 0, 0, 0, 0.07057651, 61.670918, -0.009906173, 0.31113622)
+mesh = SubResource("BoxMesh_qchpj")
+material = SubResource("StandardMaterial3D_jugk4")
+
+[node name="CSGhut_wall3D13" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1367859354]
+transform = Transform3D(-2.5318972e-08, 0, -13.947903, -5.0637922e-08, -7.9478545, 5.3300094e-14, -0.5792303, 6.948235e-07, 6.096821e-07, -26.022013, 1.6969802, 5.936057)
+size = Vector3(1, 0.40527344, 1.6099945)
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGhut_wall3D13" unique_id=1822629526]
+transform = Transform3D(0.9999997, 1.2789769e-13, 0, 8.7041485e-14, 0.15000235, -7.411538e-21, 1.110223e-16, -2.0911126e-21, 0.099999964, 9.536743e-07, -0.009957626, 0)
+operation = 2
+radius = 0.7
+height = 1.2
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGhut_wall3D13" unique_id=959608975]
+transform = Transform3D(0.9999997, 1.2789769e-13, 0, 8.881784e-14, 0.15000238, -7.5174174e-21, 1.110223e-16, -2.0911126e-21, 0.099999964, 9.536743e-07, -0.009957626, 0.22225583)
+operation = 2
+radius = 0.7
+height = 1.2
+
+[node name="CSGramp_1_3D27" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1911582806]
+transform = Transform3D(0.0048488057, -0.037617378, -13.947256, 0.5791671, -0.09660038, 0.11755586, -0.007062907, -7.947181, 0.06458917, -184.5081, 44.69996, 313.96353)
+size = Vector3(1, 1.1326294, 3.6823337)
+
+[node name="CSGramp3D15" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_1_3D27" unique_id=1671001404]
+transform = Transform3D(0.87011606, 0.16731274, 11.864137, -0.00093958067, 0.9999147, -0.0034716493, -0.020459997, -0.0026387074, 0.87019956, -66.14201, -0.061405182, -7.471546)
+size = Vector3(1, 1, 1.6406982)
+
+[node name="CSGramp3D16" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_1_3D27" unique_id=121407757]
+transform = Transform3D(0.87011606, 0.16731274, 11.864137, -0.00093958067, 0.9999147, -0.0034716493, -0.020459997, -0.0026387074, 0.87019956, -45.36037, -0.06807327, -6.019515)
+size = Vector3(1, 1, 1.6999023)
+
+[node name="CSGramp3D17" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_1_3D27" unique_id=2011039362]
+transform = Transform3D(0.9679866, 0.16731273, 6.036985, -0.0009448794, 0.99991494, 0.0025024852, -0.010409699, -0.0026387142, 0.96806264, -29.377014, -0.06816101, -4.282856)
+size = Vector3(1, 1, 1.8804077)
+
+[node name="CSGramp3D18" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_1_3D27" unique_id=828183566]
+transform = Transform3D(0.8746721, 0.051771507, 11.671608, -5.221431e-05, 0.9999784, -0.011391628, -0.020129288, 0.0030374092, 0.8746563, -10.479298, -0.07201767, -2.6059542)
+size = Vector3(1, 1, 1.7708343)
+
+[node name="CSGramp_2_3D26" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1178183862]
+transform = Transform3D(0.28499138, -0.07972906, -12.142033, 0.50422, -0.06625689, 6.8637323, -0.007062905, -7.9471793, 0.064589165, -195.76344, 94.60316, 198.20296)
+size = Vector3(1, 2.6000001, 1.859732)
+
+[node name="CSGramp3D19" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=1999921916]
+transform = Transform3D(0.96818197, 0.16731273, -6.0188203, -0.0007760651, 0.99991494, 0.013218212, 0.010382904, -0.002638726, 0.9682294, 35.43119, 0.23442459, -5.9089966)
+size = Vector3(1, 1, 1.1)
+
+[node name="CSGramp3D20" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=1023727864]
+transform = Transform3D(0.96818197, 0.16731273, -6.0188203, -0.0007760651, 0.99991494, 0.013218212, 0.010382904, -0.002638726, 0.9682294, 60.95117, 0.16984177, -11.064732)
+size = Vector3(1, 1, 1.8683593)
+
+[node name="CSGramp3D21" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=548252955]
+transform = Transform3D(0.96818197, 0.16731273, -6.0188203, -0.0007760651, 0.99991494, 0.013218212, 0.010382904, -0.002638726, 0.9682294, 50.912273, 0.19377518, -9.217484)
+size = Vector3(1, 1, 1.6)
+
+[node name="CSGramp3D22" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=1837231809]
+transform = Transform3D(0.98617303, 0.16731276, -3.9797306, -0.0008206362, 0.9999152, 0.011552276, 0.006866134, -0.0026387246, 0.9862265, 41.173798, 0.21741676, -7.3734913)
+size = Vector3(1, 1, 1.7955078)
+
+[node name="CSGramp3D23" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=283066071]
+transform = Transform3D(0.96818197, 0.16731273, -6.0188203, -0.0007760651, 0.99991494, 0.013218212, 0.010382904, -0.002638726, 0.9682294, 30.140648, 0.24903488, -4.6897526)
+size = Vector3(1, 1, 1.6)
+
+[node name="CSGramp3D24" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=1599988571]
+transform = Transform3D(0.86604553, -0.009356469, -12.03919, 0.00028778863, 0.99997723, 0.009610773, 0.020761989, -0.0038275956, 0.86602837, 15.668854, 0.27429008, -3.1648722)
+size = Vector3(1, 1, 1.6)
+
+[node name="CSGramp3D25" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGramp_2_3D26" unique_id=1222686143]
+transform = Transform3D(0.96593106, -0.010744929, -6.231894, 0.00011762447, 0.9999942, 0.0052615525, 0.01074728, -0.0018882335, 0.9659266, 2.5277557, 0.29788017, -1.6992207)
+size = Vector3(1, 1, 1.6)
+
+[node name="CSGfloorLvl3_3D28" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=237323812]
+transform = Transform3D(0.00787114, -0.03812098, -13.946454, 0.57917345, -0.027047738, 0.1897669, -0.0020088046, -7.947718, 0.06624769, -221.00157, 100.67407, 295.42703)
+size = Vector3(1, 27.067724, 2.0906708)
+
+[node name="CSGMesh3D11" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGfloorLvl3_3D28" unique_id=975553674]
+transform = Transform3D(6.9417953, 0.00017262565, -0.59547263, -0.1785657, -4.281847e-08, -12.513247, -21.21199, 9.7544e-08, 0.033867404, 4.132141, 5.1924343, -11.331861)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=874219185]
-transform = Transform3D(0.5792304, 0, 0, 0, 3.217755, 0, 0, 0, 9.298601, -37, 1.6760237, 0.33412954)
-size = Vector3(1, 1, 1.0072174)
+[node name="CSGMesh3D12" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGfloorLvl3_3D28" unique_id=1642146426]
+transform = Transform3D(6.9417953, 0.00017262565, -0.59547263, -0.1785657, -4.281847e-08, -12.513247, -21.21199, 9.7544e-08, 0.033867404, 3.5389252, -7.286194, -11.298086)
+mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGBox3D2" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1746835601]
-transform = Transform3D(0.5792304, 0, 0, 0, 3.217755, 0, 0, 0, 9.298601, -27.023127, 1.6760237, -1.0723662)
-size = Vector3(1, 1, 0.7)
-
-[node name="CSGBox3D5" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1626503087]
-transform = Transform3D(0.5792304, 0, 0, 0, 3.217755, 0, 0, 0, 9.298601, -19.023127, 1.6760237, 1.2852015)
-size = Vector3(1, 1, 0.8)
-
-[node name="CSGBox3D3" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1379784039]
-transform = Transform3D(-2.5318966e-08, 0, -9.298601, 0, 3.2177546, 0, 0.57923037, 0, -4.0645475e-07, -32.16274, 1.6760237, -4.663955)
-size = Vector3(1, 1, 1.0949707)
-
-[node name="CSGBox3D6" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1015052086]
-transform = Transform3D(-2.5318966e-08, 0, -9.298601, 0, 3.2177546, 0, 0.57923037, 0, -4.0645475e-07, -23.860126, 1.6760237, -4.663955)
-size = Vector3(1, 1, 1.1)
-
-[node name="CSGBox3D13" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1367859354]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -23.860126, 1.6760237, 314.43607)
-size = Vector3(1, 1, 1.1)
-
-[node name="CSGBox3D14" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=924778106]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -42.273148, 8.576024, 314.43607)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D15" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1671001404]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -69.373146, 14.476025, 314.43607)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D16" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=121407757]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -96.77315, 21.376024, 314.43607)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D17" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=2011039362]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -121.57315, 28.976025, 314.43607)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D18" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=828183566]
-transform = Transform3D(-0.0053002117, -0.035918955, -13.947176, 0.5791631, -0.09724467, -0.12685007, -0.0070629045, -7.9471784, 0.06458916, -147.17316, 35.376026, 314.43607)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D19" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1999921916]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -23.860126, 45.97603, 193.43605)
-size = Vector3(1, 1, 1.1)
-
-[node name="CSGBox3D20" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1023727864]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -42.273148, 52.876022, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D21" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=548252955]
-transform = Transform3D(-2.5318972e-08, 0, -13.947903, 0.57923037, -3.474117e-07, -6.0968216e-07, -2.5318965e-08, -7.947855, 7.620295e-14, -69.373146, 58.776024, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D22" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1837231809]
-transform = Transform3D(0.14991581, -8.9916774e-08, -13.472639, 0.55949354, -3.3557393e-07, 3.609982, -2.5318965e-08, -7.9478545, 7.620295e-14, -96.77315, 65.676025, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D23" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=283066071]
-transform = Transform3D(0.14991581, -8.9916774e-08, -13.472639, 0.55949354, -3.3557393e-07, 3.609982, -2.5318965e-08, -7.9478545, 7.620295e-14, -124.27315, 77.57603, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D24" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1599988571]
-transform = Transform3D(-0.0053002117, -0.035918955, -13.947176, 0.5791631, -0.09724467, -0.12685007, -0.0070629045, -7.9471784, 0.06458916, -150.47316, 81.47603, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D25" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1222686143]
-transform = Transform3D(0.1447788, -0.059863813, -13.504767, 0.5608004, -0.08463463, 3.487267, -0.007062904, -7.9471784, 0.06458916, -172.97316, 84.176025, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D26" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1178183862]
-transform = Transform3D(0.1447788, -0.059863813, -13.504767, 0.5608004, -0.08463463, 3.487267, -0.007062904, -7.9471784, 0.06458916, -198.77316, 95.97603, 193.43605)
-size = Vector3(1, 1, 1.6)
-
-[node name="CSGBox3D7" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1946566946]
-transform = Transform3D(-2.5318966e-08, 0, -18.42307, 0, 3.2177546, 0, 0.57923037, 0, -8.0529793e-07, -27.99502, 1.6760237, 5.319075)
-size = Vector3(1.0585938, 1, 1.0038757)
-
-[node name="CSGBox3D8" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1435057964]
-transform = Transform3D(-2.5318979e-08, 0, -123.15804, 0, 3.2177546, 0, 0.57923067, 0, -5.383408e-06, 24.585495, 1.6760237, -5.4809256)
-size = Vector3(1.0585938, 1, 1.0038757)
-
-[node name="CSGBox3D12" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1505438622]
+[node name="CSGFloorLvl1_safewall_3D" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1505438622]
 transform = Transform3D(-2.5318979e-08, 0, -175.71776, 0, 3.2177546, 0, 0.57923067, 0, -7.680866e-06, -125.43518, 1.6760237, 5.8742266)
 size = Vector3(1.0585938, 1, 1.0038757)
 
-[node name="CSGBox3D9" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1974507015]
-transform = Transform3D(-2.5318979e-08, 0, -304.64392, 0, 3.2177546, 0, 0.57923067, 0, -1.3316406e-05, -63.37706, 1.6760237, 402.7191)
+[node name="CSGwall3D9" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGFloorLvl1_safewall_3D" unique_id=1974507015]
+transform = Transform3D(1, 0, 1.8189894e-12, 0, 1, 0, 0, 0, 1.7337116, 685.124, 0, -0.3531694)
 size = Vector3(1.0585938, 1, 0.9735535)
 
-[node name="CSGBox3D10" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1194489240]
-transform = Transform3D(0.57923067, 0, 4.7293723e-12, 0, 3.2177546, 0, 0, 0, 396.03708, -211.49501, 1.6760237, 205.65762)
+[node name="CSGwall3D10" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGFloorLvl1_safewall_3D" unique_id=1194489240]
+transform = Transform3D(-4.371138e-08, 0, 683.7295, 0, 1, 0, -0.0032963695, 0, -9.8517866e-08, 344.91165, 0, 0.4897617)
 size = Vector3(1.0585938, 1, 0.9934654)
 
-[node name="CSGBox3D11" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=580886965]
-transform = Transform3D(0.57923067, 0, 4.8055214e-12, 0, 3.2177546, 0, 0, 0, 402.41382, 84.88054, 1.6760237, 205.76414)
+[node name="CSGwall3D11" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGFloorLvl1_safewall_3D" unique_id=580886965]
+transform = Transform3D(-4.371138e-08, 0, 694.73846, 0, 1, 0, -0.0032963695, 0, -1.0010414e-07, 345.09552, 0, -1.1968951)
 size = Vector3(1.0585938, 1, 0.9940033)
+
+[node name="CSGwall3D8" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGFloorLvl1_safewall_3D" unique_id=1435057964]
+transform = Transform3D(0.9999999, 0, 0, 0, 0.99999994, 0, 1.3877788e-17, 0, 0.70088553, -19.603863, 0, -0.8552486)
+size = Vector3(1.0585938, 1, 0.99962616)
+
+[node name="ground_brackey" type="Node" parent="." unique_id=1358808430]
