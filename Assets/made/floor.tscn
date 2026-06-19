@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://bxcbck0o8fdd2"]
 
-[ext_resource type="Material" path="res://Assets/textures/Metal007_2K-JPG.tres" id="1_hy7ny"]
+[ext_resource type="Material" uid="uid://bguo4w8weoyit" path="res://Assets/textures/Metal007_2K-JPG.tres" id="1_hy7ny"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p64un"]
 resource_name = "DungeonMat"

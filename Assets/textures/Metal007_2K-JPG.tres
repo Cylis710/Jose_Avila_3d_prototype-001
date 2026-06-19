@@ -8,6 +8,7 @@
 
 [resource]
 albedo_texture = ExtResource("Color")
+albedo_texture_force_srgb = true
 metallic = 1.0
 metallic_texture = ExtResource("Metalness")
 metallic_texture_channel = 4
@@ -15,6 +16,8 @@ roughness_texture = ExtResource("Roughness")
 roughness_texture_channel = 4
 normal_enabled = true
 normal_texture = ExtResource("NormalGL")
+bent_normal_enabled = true
+clearcoat_enabled = true
 heightmap_enabled = true
 heightmap_scale = 1.0
 heightmap_texture = ExtResource("Displacement")
