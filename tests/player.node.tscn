@@ -11,16 +11,6 @@
 
 [sub_resource type="BoxMesh" id="BoxMesh_puy5t"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_qchpj"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jugk4"]
-albedo_color = Color(0.7647059, 0.7411765, 0.08627451, 1)
-metallic = 0.55
-metallic_specular = 0.26
-ao_enabled = true
-ao_light_affect = 0.07
-ao_on_uv2 = true
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srylk"]
 resource_name = "DungeonMat"
 albedo_color = Color(0.9063318, 0.9063318, 0.9063318, 1)
@@ -120,32 +110,6 @@ mesh = SubResource("BoxMesh_puy5t")
 transform = Transform3D(3.2485495, 0, 0, 0, 0.000999999, 0, 0, 0, 8.2014265, -1.1672751, 0, 29.057076)
 mesh = SubResource("BoxMesh_puy5t")
 
-[node name="CSGHut_walls_ceilings3D" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=874219185]
-transform = Transform3D(0.5792304, 0, 0, 0, 3.217755, 0, 0, 0, 9.298601, -37, 1.6453859, -0.09335342)
-size = Vector3(1, 1.019043, 1.2127419)
-
-[node name="CSGwall3D5" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=1626503087]
-transform = Transform3D(1, 0, 0, 0, 0.9999999, 0, 0, 0, 1.1999999, 31.03579, 0.009521484, 0.06152549)
-
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D/CSGwall3D5" unique_id=406277196]
-transform = Transform3D(1.6, 0, 0, 0, 1.6, 0, 0, 0, 0.15999992, 0, -0.14999998, 0)
-operation = 2
-height = 0.70000005
-
-[node name="CSGwall3D2" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=1746835601]
-transform = Transform3D(0.47233063, 0, 0, 0, 0.9999999, 0, 0, 0, 0.99999994, 17.224361, 0.009521484, 0.2635335)
-size = Vector3(1, 1, 0.7079102)
-
-[node name="CSGfloor_hut3D3" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=162904086]
-transform = Transform3D(29.697258, 0, 0, 0, 0.0031077543, 0, 0, 0, 1.2857671, 15.302235, -0.51134586, 0.05040626)
-use_collision = true
-mesh = SubResource("BoxMesh_puy5t")
-
-[node name="pillar" type="CSGMesh3D" parent="scene/MeshInstance3D/CSGCombiner3D/CSGHut_walls_ceilings3D" unique_id=1489897833]
-transform = Transform3D(1.6068151, 0, 0, 0, 1.023191, 0, 0, 0, 0.07057651, 61.670918, -0.009906173, 0.31113622)
-mesh = SubResource("BoxMesh_qchpj")
-material = SubResource("StandardMaterial3D_jugk4")
-
 [node name="CSGramp_1_3D27" type="CSGBox3D" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1911582806]
 transform = Transform3D(0.0048488057, -0.037617378, -13.947256, 0.5791671, -0.09660038, 0.11755586, -0.007062907, -7.947181, 0.06458917, -184.5081, 44.69996, 313.96353)
 size = Vector3(1, 1.1326294, 3.6823337)
@@ -236,6 +200,15 @@ transform = Transform3D(0.39999998, 0, 0, 0, 1, 0, 0, 0, 1, -19.2, 0, -3.4)
 transform = Transform3D(0.39999998, 0, 0, 0, 1, 0, 0, 0, 1, -19.2, 0, 0.5999999)
 
 [node name="Floor15" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=877930280 instance=ExtResource("2_jugk4")]
+transform = Transform3D(0.39999998, 0, 0, 0, 1, 0, 0, 0, 1, -19.2, 0, 3.8)
+
+[node name="Floor29" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1049730303 instance=ExtResource("2_jugk4")]
+transform = Transform3D(0.39999998, 0, 0, 0, 1, 0, 0, 0, 1, -19.2, 0, -3.4)
+
+[node name="Floor30" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=750964767 instance=ExtResource("2_jugk4")]
+transform = Transform3D(0.39999998, 0, 0, 0, 1, 0, 0, 0, 1, -19.2, 0, 0.5999999)
+
+[node name="Floor31" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1982233683 instance=ExtResource("2_jugk4")]
 transform = Transform3D(0.39999998, 0, 0, 0, 1, 0, 0, 0, 1, -19.2, 0, 3.8)
 
 [node name="Floor2" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=2006247728 instance=ExtResource("2_jugk4")]
@@ -412,6 +385,54 @@ transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, 0.69
 
 [node name="StaticBody3D22" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1060737373 instance=ExtResource("6_n5bh3")]
 transform = Transform3D(-1, -8.742278e-08, 0, 8.742278e-08, -1, 0, 0, 0, 1, 4.6999984, 3.4, -0.1)
+
+[node name="Floor16" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=774638320 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, 3.8)
+
+[node name="Floor17" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=2126371948 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.000002, 0, -0.2)
+
+[node name="Floor18" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=832680342 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.7, -22, 0, -3.4)
+
+[node name="Floor19" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1611587271 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.77, -22, 0, -3.8000002)
+
+[node name="Floor20" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1517332113 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26, 0, 3.8)
+
+[node name="Floor21" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=206386007 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.000002, 0, -0.2)
+
+[node name="Floor22" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1918062308 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.77, -26, 0, -3.7230003)
+
+[node name="Floor23" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=967387822 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 3.8)
+
+[node name="Floor24" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1185837731 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.000002, 0, -0.2)
+
+[node name="Floor25" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1189686528 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.77, -30, 0, -3.7230003)
+
+[node name="Floor26" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=725262070 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0, 3.8)
+
+[node name="Floor27" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=242210198 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34.000004, 0, -0.2)
+
+[node name="Floor28" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=990156383 instance=ExtResource("2_jugk4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.77, -34, 0, -3.7230003)
+
+[node name="Floor32" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1927001121 instance=ExtResource("2_jugk4")]
+transform = Transform3D(0.3359999, 0, 0, 0, 1, 0, 0, 0, 1, -36.6608, 0, 3.8)
+
+[node name="Floor33" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=2079296823 instance=ExtResource("2_jugk4")]
+transform = Transform3D(0.3359999, 0, 0, 0, 1, 0, 0, 0, 1, -36.660805, 0, -0.2)
+
+[node name="Floor34" parent="scene/MeshInstance3D/CSGCombiner3D" unique_id=1123688706 instance=ExtResource("2_jugk4")]
+transform = Transform3D(0.3359999, 0, 0, 0, 1, 0, 0, 0, 0.77, -36.6608, 0, -3.7230003)
 
 [node name="hut_house" type="Node" parent="." unique_id=1358808430]
 

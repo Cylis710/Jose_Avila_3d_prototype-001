@@ -1,24 +1,29 @@
 [gd_resource type="StandardMaterial3D" format=3 uid="uid://bguo4w8weoyit"]
 
-[ext_resource type="Texture2D" uid="uid://8aqon618mmcs" path="res://Assets/textures/Metal007_2K-JPG_Color.jpg" id="Color"]
+[ext_resource type="Texture2D" uid="uid://cv1i8vdt4h5j6" path="res://course assets/brackeys_3d_game_assets/dungeon_assets/dungeon_albedo.png" id="1_h3v5a"]
 [ext_resource type="Texture2D" uid="uid://ce4hfiky0kye7" path="res://Assets/textures/Metal007_2K-JPG_Displacement.jpg" id="Displacement"]
-[ext_resource type="Texture2D" uid="uid://ghql4nuf8tmi" path="res://Assets/textures/Metal007_2K-JPG_Metalness.jpg" id="Metalness"]
 [ext_resource type="Texture2D" uid="uid://nvgykje6r1a6" path="res://Assets/textures/Metal007_2K-JPG_NormalGL.jpg" id="NormalGL"]
 [ext_resource type="Texture2D" uid="uid://ch4u2smeid8qe" path="res://Assets/textures/Metal007_2K-JPG_Roughness.jpg" id="Roughness"]
 
 [resource]
-albedo_texture = ExtResource("Color")
-albedo_texture_force_srgb = true
-metallic = 1.0
-metallic_texture = ExtResource("Metalness")
-metallic_texture_channel = 4
+albedo_color = Color(0.45840502, 0.45840508, 0.45840502, 1)
+albedo_texture = ExtResource("1_h3v5a")
+albedo_texture_msdf = true
+metallic = 0.63
+metallic_specular = 0.77
+metallic_texture = ExtResource("1_h3v5a")
+metallic_texture_channel = 3
 roughness_texture = ExtResource("Roughness")
 roughness_texture_channel = 4
 normal_enabled = true
 normal_texture = ExtResource("NormalGL")
 bent_normal_enabled = true
+bent_normal_texture = ExtResource("1_h3v5a")
+rim_enabled = true
 clearcoat_enabled = true
 heightmap_enabled = true
 heightmap_scale = 1.0
 heightmap_texture = ExtResource("Displacement")
 refraction_enabled = true
+detail_enabled = true
+detail_albedo = ExtResource("1_h3v5a")
