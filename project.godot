@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Jose_avila_3d_prototype01"
-run/main_scene="res://tests/player.node.tscn"
+run/main_scene="uid://dkbqwlx7jobje"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

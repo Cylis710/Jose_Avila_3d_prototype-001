@@ -1,6 +1,6 @@
-[gd_scene format=4 uid="uid://cme8k55bubkh2"]
+[gd_scene format=4 uid="uid://qqkkvu7a26wb"]
 
-[ext_resource type="Texture2D" uid="uid://1u0le506fsgl" path="res://course assets/brackeys_3d_game_assets/import_examples/chest_gold/chest_texture.png" id="1_bij4p"]
+[ext_resource type="Texture2D" uid="uid://1u0le506fsgl" path="res://course assets/brackeys_3d_game_assets/import_examples/chest_gold/chest_texture.png" id="1_vu4bk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_26b2k"]
 resource_name = "DungeonMat"
@@ -42,12 +42,12 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_wvwqg")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2obhf"]
-albedo_texture = ExtResource("1_bij4p")
+albedo_texture = ExtResource("1_vu4bk")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2obhf"]
 size = Vector3(0.6, 3.6000001, 0.7)
 
-[node name="corner_gold" type="StaticBody3D" unique_id=1384627371]
+[node name="dungeon_courner" type="StaticBody3D" unique_id=1384627371]
 
 [node name="wall_corner2" type="Node3D" parent="." unique_id=114243980]
 
