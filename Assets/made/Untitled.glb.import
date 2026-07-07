@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cwi3456383ddv"
-path="res://.godot/imported/health pack 2.glb-76738beaf6e02c9b4ee4e7c6d93c51ad.scn"
+uid="uid://bkuev2n12qx0w"
+path="res://.godot/imported/Untitled.glb-d15bec9b6b58adcbd1a303a6356a5cfc.scn"
 
 [deps]
 
-source_file="res://Assets/addon_files/SimpleGrassTextured-2.1.0/addons/health pack 2.glb"
-dest_files=["res://.godot/imported/health pack 2.glb-76738beaf6e02c9b4ee4e7c6d93c51ad.scn"]
+source_file="res://Assets/made/Untitled.glb"
+dest_files=["res://.godot/imported/Untitled.glb-d15bec9b6b58adcbd1a303a6356a5cfc.scn"]
 
 [params]
 

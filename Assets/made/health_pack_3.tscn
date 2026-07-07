@@ -2,6 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://6orswro66m1n" path="res://course assets/brackeys_3d_game_assets/skeleton/skeleton_mage_skeleton_texture.png" id="1_kwnc4"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_kwnc4"]
+size = Vector3(0.74264526, 1.6694336, 2.230957)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwo17"]
 resource_name = "Material"
 cull_mode = 2
@@ -47,6 +50,13 @@ albedo_texture = ExtResource("1_kwnc4")
 
 [node name="health-pack3" type="Node3D" unique_id=1626041624]
 transform = Transform3D(0.377707, 0, 0, 0, 0.34466764, 0, 0, 0, 0.37218842, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=811745042]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0.0059963465, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=975851179]
+transform = Transform3D(1, 0, 0, 0, 0.9999825, 0, 0, 0, 1, -0.03707675, 0.86645097, 0.15356447)
+shape = SubResource("BoxShape3D_kwnc4")
 
 [node name="health pack 2" type="Node3D" parent="." unique_id=1158799981]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0059963465, 0, 0)
