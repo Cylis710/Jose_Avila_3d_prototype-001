@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dkbqwlx7jobje"]
 
+[ext_resource type="Environment" uid="uid://d1h6hqs820dsb" path="res://environmental fog.tres" id="2_vpucx"]
 [ext_resource type="PackedScene" uid="uid://difxuccqt0cbi" path="res://Assets/made/wood_floor.tscn" id="4_kjjtv"]
 [ext_resource type="PackedScene" uid="uid://dqlgmmeaki2hh" path="res://Assets/made/barrel.tscn" id="7_vpucx"]
 [ext_resource type="PackedScene" uid="uid://bevqbbt7gh5et" path="res://Assets/made/Chest.tscn" id="8_cv015"]
@@ -11,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://d17ghn21rtnnj" path="res://Assets/made/candle.tscn" id="11_vpucx"]
 [ext_resource type="PackedScene" uid="uid://bhhugx63q57kx" path="res://Assets/made/dungeon_wall.tscn" id="11_yeh4n"]
 [ext_resource type="PackedScene" uid="uid://w4ysp1l45pri" path="res://Assets/made/player2.tscn" id="12_yeh4n"]
+[ext_resource type="PackedScene" uid="uid://jn05cgercsjw" path="res://Assets/made/chair.tscn" id="13_2m41o"]
 [ext_resource type="PackedScene" uid="uid://cp2100fnlr7a1" path="res://Assets/made/dirt_floor.tscn" id="13_7jvoy"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_puy5t"]
@@ -22,11 +24,15 @@ transform = Transform3D(1, 0, 0, 0, 0.99942684, -0.033852916, 0, 0.033852916, 0.
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=863872224]
 transform = Transform3D(0.96432245, 0.24612698, -0.09748679, 0.20402811, -0.4563298, 0.86610395, 0.16868535, -0.85509366, -0.49026597, 0, 0, 13)
-light_energy = 5.592
+light_color = Color(0.8782205, 0.851594, 0.56940794, 1)
+light_energy = 11.929
 light_indirect_energy = 0.367
 light_volumetric_fog_energy = 0.683
 shadow_enabled = true
 shadow_opacity = 0.93
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="DirectionalLight3D" unique_id=630671430]
+environment = ExtResource("2_vpucx")
 
 [node name="scene" type="Node" parent="." unique_id=1267370352]
 
@@ -1521,6 +1527,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1416817, 0.31075883, 4.9443
 
 [node name="candle3" parent="hut_house" unique_id=2036310403 instance=ExtResource("11_vpucx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.681831, 0.08538896, 4.8497586)
+
+[node name="candle4" parent="hut_house" unique_id=1913377023 instance=ExtResource("11_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.849139, 1.9000003, 13.108914)
+
+[node name="Barrel9" parent="hut_house" unique_id=1431659618 instance=ExtResource("7_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 0.1, 12.900001)
+
+[node name="Barrel10" parent="hut_house" unique_id=1073632925 instance=ExtResource("7_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.4, 0.2, 14.1)
 
 [node name="Scenery" type="Node" parent="." unique_id=1082451491]
 
@@ -8141,3 +8156,21 @@ transform = Transform3D(1.2208128, 0, 0, 0, 1, 0, 0, 0, 1.0724374, 24.831812, 0.
 
 [node name="wood_floor48" parent="Scenery" unique_id=1166575818 instance=ExtResource("4_kjjtv")]
 transform = Transform3D(1.2208128, 0, 0, 0, 1, 0, 0, 0, 1, 24.831812, 0.17535016, 16.65593)
+
+[node name="chair" parent="." unique_id=899514117 instance=ExtResource("13_2m41o")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 9, 0.2, -0.70000046)
+
+[node name="chair2" parent="." unique_id=1354454653 instance=ExtResource("13_2m41o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.3, 0.2, 7.8)
+
+[node name="chair3" parent="." unique_id=389973974 instance=ExtResource("13_2m41o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.3, 0.2, 8.8)
+
+[node name="chair4" parent="." unique_id=1848055185 instance=ExtResource("13_2m41o")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -9.5, 0.2, 7.1000004)
+
+[node name="chair5" parent="." unique_id=1731200639 instance=ExtResource("13_2m41o")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -10.5, 3.5, 5.2)
+
+[node name="chair6" parent="." unique_id=774485847 instance=ExtResource("13_2m41o")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -13, 3.5, 5.2000003)

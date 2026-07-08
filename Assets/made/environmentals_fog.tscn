@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dc4fus5tt2ehk"]
+
+[ext_resource type="Environment" uid="uid://d1h6hqs820dsb" path="res://environmental fog.tres" id="1_av4xr"]
+
+[node name="environmentals" type="Node3D" unique_id=539813283]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=667675472]
+environment = ExtResource("1_av4xr")

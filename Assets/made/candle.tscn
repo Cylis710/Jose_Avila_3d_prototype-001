@@ -44,8 +44,6 @@ shadow_mesh = SubResource("ArrayMesh_ar5gf")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8tqug"]
 albedo_texture = ExtResource("1_15f56")
 
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_8tqug"]
-
 [node name="candle" type="Node3D" unique_id=707852512]
 
 [node name="candles" type="Node3D" parent="." unique_id=1931288017]
@@ -54,21 +52,13 @@ albedo_texture = ExtResource("1_15f56")
 mesh = SubResource("ArrayMesh_ogab2")
 surface_material_override/0 = SubResource("StandardMaterial3D_8tqug")
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=850959587]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1077781, 0)
-light_color = Color(0.73482156, 0.37187546, 0, 1)
-light_energy = 5.982
-light_indirect_energy = 14.298
-light_volumetric_fog_energy = 9.872
-light_projector = SubResource("NoiseTexture2D_8tqug")
-light_size = 0.337
-light_specular = 3.352
-light_bake_mode = 1
+[node name="OmniLight3D" type="OmniLight3D" parent="candles" unique_id=253009934]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.092178285, 0.88611823, 0)
+light_color = Color(0.9999965, 0.5134926, 0.18026415, 1)
+light_energy = 3.591
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
 shadow_enabled = true
-shadow_bias = 0.0
-shadow_transmittance_bias = 0.0
-shadow_opacity = 0.0
-shadow_blur = 4.664
-omni_range = 1.4178841
-omni_attenuation = 6.947
-omni_shadow_mode = 0
+shadow_bias = 1.387
+shadow_normal_bias = 1.99
+shadow_blur = 2.015
