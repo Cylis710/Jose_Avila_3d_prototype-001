@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cwoh2epm5ly1r"]
+
+[ext_resource type="Texture2D" uid="uid://dvwmglttkf3d2" path="res://Assets/texture/pexels-pixabay-270815.jpg" id="1_4dwtx"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fv53j"]
+resource_local_to_scene = true
+lifetime_randomness = 1.0
+inherit_velocity_ratio = 0.103
+velocity_pivot = Vector3(0, 1, 0)
+spread = 52.941
+initial_velocity_max = 1.0
+gravity = Vector3(0, 2.3, 0)
+linear_accel_min = -2.2351742e-06
+linear_accel_max = 0.99999774
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_262md"]
+albedo_color = Color(4.6817894, 1.4615775, 0.64026564, 0.62600005)
+albedo_texture = ExtResource("1_4dwtx")
+roughness = 0.0
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 0.1
+billboard_mode = 1
+billboard_keep_scale = true
+grow = true
+grow_amount = -1.371
+
+[sub_resource type="PrismMesh" id="PrismMesh_dhgvd"]
+material = SubResource("StandardMaterial3D_262md")
+size = Vector3(0.01, 0.1, 0)
+
+[sub_resource type="Gradient" id="Gradient_8e5sc"]
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_6e5aw"]
+
+[sub_resource type="NoiseTexture3D" id="NoiseTexture3D_5l0ar"]
+noise = SubResource("FastNoiseLite_6e5aw")
+color_ramp = SubResource("Gradient_8e5sc")
+
+[sub_resource type="FogMaterial" id="FogMaterial_ba4fk"]
+albedo = Color(0.66054016, 0.40995893, 9.433627e-06, 1)
+density_texture = SubResource("NoiseTexture3D_5l0ar")
+
+[node name="fire" type="GPUParticles3D" unique_id=605219890]
+transform = Transform3D(0.019999998, 0, 0, 0, 0.041999985, 0, 0, 0, 0.07999999, 0, 0, 0)
+gi_mode = 2
+gi_lightmap_texel_scale = 1.8325
+amount = 60
+lifetime = 2.0
+trail_enabled = true
+process_material = SubResource("ParticleProcessMaterial_fv53j")
+draw_pass_1 = SubResource("PrismMesh_dhgvd")
+
+[node name="FogVolume" type="FogVolume" parent="." unique_id=1477602324]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.49999994, -0.049999952)
+size = Vector3(2, 1.4, 1.5)
+material = SubResource("FogMaterial_ba4fk")
