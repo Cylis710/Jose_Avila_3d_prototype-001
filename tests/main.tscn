@@ -9,11 +9,11 @@
 [ext_resource type="PackedScene" uid="uid://qqkkvu7a26wb" path="res://Assets/made/dungeon_courner.tscn" id="10_giies"]
 [ext_resource type="PackedScene" uid="uid://7igdi8aqu3ts" path="res://Assets/made/health_pack_3.tscn" id="10_kjjtv"]
 [ext_resource type="PackedScene" uid="uid://cm6g2wkxvrf7v" path="res://Assets/made/doorway _ 1.tscn" id="11_2m41o"]
-[ext_resource type="PackedScene" uid="uid://d17ghn21rtnnj" path="res://Assets/made/candle.tscn" id="11_vpucx"]
 [ext_resource type="PackedScene" uid="uid://bhhugx63q57kx" path="res://Assets/made/dungeon_wall.tscn" id="11_yeh4n"]
 [ext_resource type="PackedScene" uid="uid://w4ysp1l45pri" path="res://Assets/made/player2.tscn" id="12_yeh4n"]
 [ext_resource type="PackedScene" uid="uid://jn05cgercsjw" path="res://Assets/made/chair.tscn" id="13_2m41o"]
 [ext_resource type="PackedScene" uid="uid://cp2100fnlr7a1" path="res://Assets/made/dirt_floor.tscn" id="13_7jvoy"]
+[ext_resource type="PackedScene" uid="uid://c75l5ntmegd58" path="res://Assets/made/candle_3.tscn" id="14_vpucx"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_puy5t"]
 
@@ -857,7 +857,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.38935, 0.023268677, 4.6)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.381725, 0.024493814, 4.2000003)
 
 [node name="wood_floor122" parent="hut_house" unique_id=967636135 instance=ExtResource("4_kjjtv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.381725, 0.024493814, 0.18214694)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.381336, 0.024493814, 0.19108644)
 
 [node name="wood_floor123" parent="hut_house" unique_id=1092060850 instance=ExtResource("4_kjjtv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.381725, 0.024493814, -3.817853)
@@ -1518,18 +1518,6 @@ transform = Transform3D(0.15781334, 0, 0.33814436, 0, 0.3446676, 0, -0.34315816,
 
 [node name="health-pack14" parent="hut_house" unique_id=1574510280 instance=ExtResource("10_kjjtv")]
 transform = Transform3D(0.02493418, -0.054442048, 0.3666938, -0.04673241, 0.33724862, 0.061471112, -0.37397453, -0.045772903, 0.016767211, 8.227882, 1.9835284, -1.6737866)
-
-[node name="candle" parent="hut_house" unique_id=707852512 instance=ExtResource("11_vpucx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.055289, 0.31075883, -3.888917)
-
-[node name="candle2" parent="hut_house" unique_id=1550201119 instance=ExtResource("11_vpucx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.1416817, 0.31075883, 4.944363)
-
-[node name="candle3" parent="hut_house" unique_id=2036310403 instance=ExtResource("11_vpucx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.681831, 0.08538896, 4.8497586)
-
-[node name="candle4" parent="hut_house" unique_id=1913377023 instance=ExtResource("11_vpucx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.849139, 1.9000003, 13.108914)
 
 [node name="Barrel9" parent="hut_house" unique_id=1431659618 instance=ExtResource("7_vpucx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.8, 0.1, 12.900001)
@@ -8174,3 +8162,15 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -10.
 
 [node name="chair6" parent="." unique_id=774485847 instance=ExtResource("13_2m41o")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -13, 3.5, 5.2000003)
+
+[node name="candle 2" parent="." unique_id=2046865126 instance=ExtResource("14_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.868822, 1.9626389, 12.883288)
+
+[node name="candle 3" parent="." unique_id=1086611593 instance=ExtResource("14_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.011501, 0.22357213, 4.5966263)
+
+[node name="candle 4" parent="." unique_id=1319438185 instance=ExtResource("14_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.718732, 0.06725478, -4.248472)
+
+[node name="candle 5" parent="." unique_id=1364709048 instance=ExtResource("14_vpucx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.727673, 0.08091378, 2.5768785)

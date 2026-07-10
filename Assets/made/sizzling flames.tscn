@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://gy0dfuvnglcm"]
+
+[ext_resource type="Texture2D" uid="uid://dvwmglttkf3d2" path="res://Assets/texture/pexels-pixabay-270815.jpg" id="1_m1xxy"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_v34tj"]
+gravity = Vector3(0, 2, 0)
+linear_accel_min = -5.260002
+linear_accel_max = 1.3199978
+radial_accel_min = -2.2351742e-06
+radial_accel_max = -2.2351742e-06
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vlalx"]
+transparency = 1
+albedo_texture = ExtResource("1_m1xxy")
+albedo_texture_force_srgb = true
+metallic_specular = 1.0
+metallic_texture_channel = 4
+billboard_mode = 1
+
+[sub_resource type="PrismMesh" id="PrismMesh_3fyo0"]
+material = SubResource("StandardMaterial3D_vlalx")
+size = Vector3(0.03, 0.05, 0.001)
+
+[node name="GPUParticles3D" type="GPUParticles3D" unique_id=81206775]
+gi_mode = 2
+amount_ratio = 0.2208
+collision_base_size = 5.42
+trail_enabled = true
+trail_lifetime = 0.7
+process_material = SubResource("ParticleProcessMaterial_v34tj")
+draw_pass_1 = SubResource("PrismMesh_3fyo0")
